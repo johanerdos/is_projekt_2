@@ -158,8 +158,8 @@ public class Interface {
 		btnRemoveCustomer.setBounds(38, 317, 115, 29);
 		frame.getContentPane().add(btnRemoveCustomer);
 		
-		JButton btnHitta = new JButton("Hitta");
-		btnHitta.addActionListener(new ActionListener() {
+		JButton btnFindCustomer = new JButton("Hitta");
+		btnFindCustomer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				String customerNumber = txtCustomerNumber.getText();
 				
@@ -179,11 +179,11 @@ public class Interface {
 				
 			}
 		});
-		btnHitta.setBounds(187, 262, 115, 29);
-		frame.getContentPane().add(btnHitta);
+		btnFindCustomer.setBounds(187, 262, 115, 29);
+		frame.getContentPane().add(btnFindCustomer);
 		
-		JButton btnndra = new JButton("Ändra");
-		btnndra.addActionListener(new ActionListener() {
+		JButton btnChangeCustomer = new JButton("Ändra");
+		btnChangeCustomer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				String customerNumber = txtCustomerNumber.getText();
 				String address = txtCustomerAddress.getText();
@@ -195,8 +195,8 @@ public class Interface {
 				
 			}
 		});
-		btnndra.setBounds(187, 317, 115, 29);
-		frame.getContentPane().add(btnndra);
+		btnChangeCustomer.setBounds(187, 317, 115, 29);
+		frame.getContentPane().add(btnChangeCustomer);
 		
 		JLabel lblProdukt = new JLabel("Produkt");
 		lblProdukt.setFont(new Font("Tahoma", Font.BOLD, 16));
@@ -250,7 +250,7 @@ public class Interface {
 				}else {
 					txtOutput.setText("Vänligen fyll i alla fälten.");
 				}
-			txtProductName.setText("");
+			//txtProductName.setText("");
 			txtCategory.setText("");
 			txtPrice.setText("");
 				
@@ -260,8 +260,8 @@ public class Interface {
 		btnAddProduct.setBounds(383, 262, 115, 29);
 		frame.getContentPane().add(btnAddProduct);
 		
-		JButton btnHitta_1 = new JButton("Hitta");
-		btnHitta_1.addActionListener(new ActionListener() {
+		JButton btnFindProduct = new JButton("Hitta");
+		btnFindProduct.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				String productName = txtProductName.getText();
 				
@@ -283,8 +283,8 @@ public class Interface {
 				
 			}
 		});
-		btnHitta_1.setBounds(525, 262, 115, 29);
-		frame.getContentPane().add(btnHitta_1);
+		btnFindProduct.setBounds(525, 262, 115, 29);
+		frame.getContentPane().add(btnFindProduct);
 		
 		JButton btnRemoveProduct = new JButton("Ta bort");
 		btnRemoveProduct.addActionListener(new ActionListener() {
@@ -310,8 +310,8 @@ public class Interface {
 		btnRemoveProduct.setBounds(383, 317, 115, 29);
 		frame.getContentPane().add(btnRemoveProduct);
 		
-		JButton btnndra_1 = new JButton("Ändra");
-		btnndra_1.addActionListener(new ActionListener() {
+		JButton btnChangeProduct = new JButton("Ändra");
+		btnChangeProduct.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				String productName = txtProductName.getText();
 				String category = txtCategory.getText();
@@ -326,8 +326,8 @@ public class Interface {
 				}
 			}
 		});
-		btnndra_1.setBounds(525, 317, 115, 29);
-		frame.getContentPane().add(btnndra_1);
+		btnChangeProduct.setBounds(525, 317, 115, 29);
+		frame.getContentPane().add(btnChangeProduct);
 		
 		JLabel lblOrder = new JLabel("Order");
 		lblOrder.setFont(new Font("Tahoma", Font.BOLD, 16));
@@ -371,6 +371,8 @@ public class Interface {
 				}else {
 					txtOutput.setText("Vänligen fyll i alla fälten");
 				}
+			//txtOrderNumber.setText("");
+			txtDeliveryDate.setText("");
 				
 			}
 		});

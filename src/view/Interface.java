@@ -27,7 +27,6 @@ public class Interface {
 	private JTextField txtCustomerNumber;
 	private JTextField txtCustomerAddress;
 	private JTextField txtCustomerName;
-	private int ad;
 	private JTextField txtProductName;
 	private JTextField txtCategory;
 	private JTextField txtPrice;
